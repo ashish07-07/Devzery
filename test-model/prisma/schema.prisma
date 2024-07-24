@@ -19,3 +19,23 @@ model User{
   email String @unique
   password String
 }
+
+model Issue{
+ 
+ id Int @id @default(autoincrement())
+ testcasename String
+ testdescription String
+ estimatedtime Int
+ module String
+ priority Priority
+createdat DateTime @default(now())
+updatedat DateTime @updatedAt
+status    String @default("")
+
+}
+
+enum Priority {
+  HIGH
+  MEDIUM
+  LOW
+}
