@@ -1,6 +1,6 @@
 # Issue Tracker Application
 
-![Issue Tracker](/public/image.png)
+![Issue Tracker](.test-model/public/image1.png)
 
 This project is an Issue Tracker Application built with Next.js and Tailwind CSS. It allows users to create, view, and update issues, complete with authentication and authorization via NextAuth.
 
