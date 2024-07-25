@@ -155,7 +155,6 @@ import { useState } from "react";
 export default function CreateIssue() {
   const { data: session, status } = useSession();
 
-  // State for the form fields
   const [formData, setFormData] = useState({
     testCaseName: "",
     testDescription: "",

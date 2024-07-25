@@ -30,7 +30,7 @@ model Issue{
  priority Priority
 createdat DateTime @default(now())
 updatedat DateTime @updatedAt
-status    String @default("")
+status    String @default("PENDING")
 
 }
 
@@ -39,3 +39,4 @@ enum Priority {
   MEDIUM
   LOW
 }
+
