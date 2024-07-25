@@ -3,13 +3,26 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import prisma from "../db";
 
+interface Issue {
+  id: number;
+  testcasename: string;
+  testdescription: string;
+  estimatedtime: number;
+  module: string;
+  priority: string;
+  createdat: string;
+  updatedat: string;
+  status: string;
+}
+
 export default function Issue() {
-  const [datas, setData] = useState([]);
+  //   const [datas, setData] = useState([]);
+  const [datas, setdata] = useState<Issue[]>([]);
 
   useEffect(() => {
     async function GetDetails() {
       const res = await axios.get("/api/getIssues");
-      setData(res.data.response);
+      setdata(res.data.response);
     }
 
     GetDetails();
