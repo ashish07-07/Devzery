@@ -1,7 +1,9 @@
 # Issue Tracker Application
 
-![Issue Tracker](./test-model/public/image1.png)
-![Email Classification](./ai-email/public/email.png)
+![Issue creation](./test-model/public/image1.png)
+![Issue View](./test-model/public/image2.png)
+
+
 
 This project is an Issue Tracker Application built with Next.js and Tailwind CSS. It allows users to create, view, and update issues, complete with authentication and authorization via NextAuth.
 
