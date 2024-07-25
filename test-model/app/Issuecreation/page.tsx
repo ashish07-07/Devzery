@@ -34,10 +34,8 @@ export default function CreateIssue() {
     });
 
     if (res.ok) {
-      // Handle successful form submission
       console.log("Issue created successfully");
     } else {
-      // Handle errors
       console.log("Error creating issue");
     }
   };
