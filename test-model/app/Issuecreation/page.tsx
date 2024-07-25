@@ -13,7 +13,7 @@ export default function CreateIssue() {
     module: "",
     priority: "LOW",
   });
-
+  console.log("deployment");
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
