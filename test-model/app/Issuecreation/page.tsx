@@ -14,7 +14,7 @@ export default function CreateIssue() {
     priority: "LOW",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -22,7 +22,7 @@ export default function CreateIssue() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
 
     const res = await fetch("/api/Testcasecreation", {
