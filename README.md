@@ -2,8 +2,7 @@
 
 ![Issue creation](./test-model/public/image1.png)
 
-![Issue Tracker](.test-model/public/image2.png)
-
+![Issue Tracker](./test-model/public/image2.png)
 
 This project is an Issue Tracker Application built with Next.js and Tailwind CSS. It allows users to create, view, and update issues, complete with authentication and authorization via NextAuth.
 
@@ -38,46 +37,46 @@ Ensure you have the following installed on your machine:
 
 1. Clone the repository:
 
-    ```sh
-    git clone https://github.com/yourusername/issue-tracker.git
-    cd issue-tracker
-    ```
+   ```sh
+   git clone https://github.com/yourusername/issue-tracker.git
+   cd issue-tracker
+   ```
 
 2. Install dependencies:
 
-    ```sh
-    npm install
-    # or
-    yarn install
-    ```
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
 
 3. Set up your environment variables:
 
-    Create a `.env.local` file in the root directory and add the following variables:
+   Create a `.env.local` file in the root directory and add the following variables:
 
-    ```env
-    DATABASE_URL="your-database-url"
-    NEXTAUTH_URL=http://localhost:3000
-    NEXTAUTH_SECRET=your-nextauth-secret
-    GOOGLE_ID=your-google-id
-    GOOGLE_SECRET=your-google-secret
-    ```
+   ```env
+   DATABASE_URL="your-database-url"
+   NEXTAUTH_URL=http://localhost:3000
+   NEXTAUTH_SECRET=your-nextauth-secret
+   GOOGLE_ID=your-google-id
+   GOOGLE_SECRET=your-google-secret
+   ```
 
 4. Set up the database:
 
-    ```sh
-    npx prisma migrate dev --name init
-    ```
+   ```sh
+   npx prisma migrate dev --name init
+   ```
 
 5. Start the development server:
 
-    ```sh
-    npm run dev
-    # or
-    yarn dev
-    ```
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-    Your application should now be running on [http://localhost:3000](http://localhost:3000).
+   Your application should now be running on [http://localhost:3000](http://localhost:3000).
 
 ### Usage
 
@@ -144,4 +143,3 @@ This project is licensed under the MIT License.
 - [NextAuth.js](https://next-auth.js.org/)
 - [Prisma](https://www.prisma.io/)
 - [Axios](https://axios-http.com/)
-
