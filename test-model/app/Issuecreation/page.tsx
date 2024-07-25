@@ -14,7 +14,7 @@ export default function CreateIssue() {
     priority: "LOW",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -22,7 +22,7 @@ export default function CreateIssue() {
     });
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const res = await fetch("/api/Testcasecreation", {
@@ -166,6 +166,9 @@ export default function CreateIssue() {
           </div>
 
           <button
+            onClick={function () {
+              alert("issue created ");
+            }}
             type="submit"
             className="w-full bg-pink-500 text-white py-2 rounded-md mt-4"
           >
