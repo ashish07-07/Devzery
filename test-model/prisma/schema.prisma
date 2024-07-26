@@ -8,10 +8,15 @@ generator client {
   provider = "prisma-client-js"
 }
 
+// datasource db {
+//   provider = "postgresql"
+//   url      = env("DATABASE_URL")
+// }
+
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
+  url      =  "postgresql://bkashishh07:WrIzv49gynwO@ep-square-dew-a5fv8u6f.us-east-2.aws.neon.tech/Devzery?sslmode=require"
+ }
 
 model User{
 
@@ -22,7 +27,7 @@ model User{
 
 model Issue{
  
- id Int @id @default(autoincrement())
+ id Int @id @default (autoincrement())
  testcasename String
  testdescription String
  estimatedtime Int
