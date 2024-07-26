@@ -9,6 +9,7 @@ import GoogleProvider from "next-auth/providers/google";
 
 export const NEXT_AUTH = {
   providers: [
+    process.env.VERCE_ENV=="preview"?
     CredentialsProvider({
       name: "Email",
       credentials: {
